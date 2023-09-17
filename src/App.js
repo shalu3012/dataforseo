@@ -2,18 +2,16 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import axios from "axios";
 import Search from "./Components/Search";
 import Results from "./Components/Results";
-import { redirect } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
-import Screenshot from "./Components/Screenshot";
+
 import PagenotFound from "./Components/PagenotFound";
 
 function App() {
   const [data, setData] = useState();
   const [error, setError] = useState(false);
-  const [url, setUrl] = useState("");
+
   function makegetrequest(id, url) {
-    setUrl(url);
     const interval = setInterval(() => {
       get(id);
     }, 10000);

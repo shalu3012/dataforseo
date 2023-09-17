@@ -11,7 +11,6 @@ const Search = ({ makegetrequest }) => {
   const navigate = useNavigate();
   const [url, setUrl] = useState("");
   const [imgurl, setImgUrl] = useState("");
-  const [fetchImg, setFetchImg] = useState(false);
   const [loading, setLoading] = useState(false);
   const post_array = [];
   function handleChange(e) {
